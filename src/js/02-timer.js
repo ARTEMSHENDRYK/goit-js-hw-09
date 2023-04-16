@@ -48,8 +48,8 @@ function countDown(evt) {
       return;
     }
 
-    remainingTime = convertMs(countDownTime);
     const { days, hours, minutes, seconds } = remainingTime; 
+    remainingTime = convertMs(countDownTime);
     secondsRef.textContent = addLeadingZero(seconds);        
     minutesRef.textContent = addLeadingZero(minutes);
     hoursRef.textContent = addLeadingZero(hours);
